@@ -37,6 +37,10 @@ Afin de mettre en oeuvre ce projet, nous allons utiliser les APIs suivantes :
 	http://pokeprices.doeiqts.com/api/documentation
 	- Google maps.
 
+Ainsi que potentiellement ces APIs:
+	- https://help.tcgplayer.com/hc/en-us/articles/201577976-How-can-I-get-access-to-your-card-pricing-data-
+	- https://www.mkmapi.eu/ws/documentation/API_2.0:Market_Place_Information
+
 	
 
      
