@@ -14,9 +14,9 @@
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory ->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon"-->
 
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -35,6 +35,29 @@
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 id="modalTitle" class="modal-title">Modal Header</h4>
+        </div>
+        <div id="modalBody" class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
 
         <div id="preloader">
             <div id="status">&nbsp;</div>
@@ -72,8 +95,8 @@
                     <div class="search-form wow pulse">
                         <form action="" class=" form-inline">
                             <div class="col-md-12">
-                                <div class="col-md-3">
-                                    <input type="text" class="form-control" placeholder="Key word">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="vous cherchez une carte">
                                 </div>
                                 <div class="col-md-3">                                   
                                     <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Choisis ton extention">
@@ -94,9 +117,9 @@
                                         <option>Ile de france</option>
                                     </select>
                                 </div>
-								<div class="col-md-3">                                   
+								<div class="col-md-2">                                   
                                     <button type="button" class="btn btn-default">
-										<span class="glyphicon glyphicon-search"></span> Search
+										<span class="glyphicon glyphicon-search"></span> 
 									</button>
                                 </div>
 								
@@ -126,12 +149,12 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse yamm" id="navigation">
                     <div class="button navbar-right">
-                        <button class="navbar-btn nav-button wow bounceInRight login" ><a class="" href="#" style="color:white">connexion(ou nom)</a></button>
-                        <button class="navbar-btn nav-button wow bounceInRight login" ><a class="" href="#" style="color:white">inscript(ou deco)</a></button>
+                        <button class="navbar-btn nav-button wow bounceInRight login" ><a class="" href="#" style="color:white">Richard</a></button>
+                        <button class="navbar-btn nav-button wow bounceInRight login" ><a class="" href="#" style="color:white">deconnexion</a></button>
                     </div>
                     <ul class="main-nav nav navbar-nav navbar-right">                    
                         <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="#">Accueil</a></li>
-                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="#">Mes messages(si co)</a></li>
+                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="#">Messages(3)</a></li>
 						<li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="#">Forum</a></li>
                         <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">A propos</a></li>
 
@@ -151,8 +174,8 @@
 
                                 <ul class="sort-by-list">
                                     <li class="active">
-                                        <a href="javascript:void(0);" class="order_by_date" data-orderby="carte_extension" data-order="ASC">
-                                            Par extension <i class="fa fa-sort-alpha-asc"></i>					
+                                        <a href="javascript:void(0);" class="order_by_date" data-orderby="carte_date" data-order="ASC">
+                                            Par Date <i class="fa fa-calendar"></i>					
                                         </a>
                                     </li>
                                     <li class="">
@@ -182,224 +205,7 @@
 
                         <div class="col-md-12 "> 
                             <div id="list-type" class="proerty-th">
-                                
-								<div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Pikachu.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Pikachu </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-											<p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                            
-                                        </div>
-
-
-                                    </div>
-                                </div> 
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Nymphali.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Nymphali </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-											<p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                            
-                                        </div>
-
-
-                                    </div>
-                                </div> 
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Pikachu.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Pikachu </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div>  
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Pikachu.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Pikachu </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div> 
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Nymphali.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Nymphali </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div> 
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Pikachu.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Pikachu </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div> 
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Pikachu.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Pikachu </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div>  
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Nymphali.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Nymphali </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Pikachu.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Pikachu </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div> 
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Pikachu.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Pikachu </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div> 
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Nymphali.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Nymphali </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div>  
-
-                                <div class="col-sm-6 col-md-3 p0">
-                                    <div class="box-two proerty-item">
-                                        <div class="item-thumb">
-                                            <a href="#" ><img src="assets/img2/Pikachu.png" height="240" width="300"></a>
-                                        </div>
-
-                                        <div class="item-entry overflow">
-                                            <h5><a href="property-1.html"> Pikachu </a></h5>
-                                            <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Exemplaire :</b> 3 </span>
-                                            <span class="proerty-price pull-right"> € 30</span>
-                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                        </div>
-
-
-                                    </div>
-                                </div> 
+                                 
 
                             </div>
                         </div>
@@ -574,6 +380,7 @@
         <script src="assets/js/price-range.js"></script>
 
         <script src="assets/js/main.js"></script>
+		<script src="assets/js/index.js"></script>
        
     </body>
 </html>
