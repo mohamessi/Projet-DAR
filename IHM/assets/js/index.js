@@ -27,6 +27,6 @@ function carte(){
 }
 
 function modaltrig(){
-	$("#modalTitle").html('Pikachu');
-	$("#modalBody").html('<img src="assets/img2/Pikachu.png" >');
+	//$("#modalTitle").html('Pikachu');
+	//$//("#modalBody").html('<img src="assets/img2/Pikachu.png" >');
 }
