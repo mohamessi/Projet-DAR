@@ -1,4 +1,3 @@
-<%@ page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -114,7 +113,7 @@
 							</li>
 
 							<li><span class="col-xs-6 col-sm-4 col-md-4 add-d-title">Prix
-									en â¬</span> <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">30</span>
+									en €</span> <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">30</span>
 							</li>
 
 						</ul>
@@ -138,7 +137,6 @@
 
 	<!-- search bar -->
 
-	<!--  >%@include file="searchBar.jsp"% -->
 	<div w3-include-html="searchBar.html"></div>
 
 
@@ -146,15 +144,11 @@
 
 	<!-- start navBar -->
 
-	<%@include file="menu.jsp"%>
+
+	<div w3-include-html="menu.html"></div>
 
 	<!-- End of nav bar -->
-	<%
-		String attribut = (String) request.getAttribute("test");
-		if (attribut != null)
-			out.println(attribut);
-		//else out.println("fuck off");
-	%>
+
 
 	<!-- Cartes area -->
 	<div class="content-area recent-Cartes"
@@ -225,10 +219,10 @@
 
 
 	<!-- Footer area-->
-	<%@include file="footer.jsp"%>
+	<div w3-include-html="footer.html"></div>
 
 	<!-- SCRIPT INCLUDE -->
-	<%@include file="scriptInclude.jsp"%>
+	<!--%@include file="scriptInclude.jsp"%-->
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
 
 	<script src="assets/js/jquery-1.10.2.min.js"></script>
