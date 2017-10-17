@@ -1,11 +1,11 @@
 package com.pokechange.jetty_jersey.Object;
 
-public class Panier {
+public class Basket {
 
 	public String extension;
-	public int numero;
-	public String proprietaire;
+	public int number;
+	public String login;
 	public boolean search;
-	public String commentaire;
+	public String comment;
 	
 }

@@ -4,9 +4,9 @@ import java.sql.Date;
 
 public class Message {
 
-	public String contenu;
-	public String auteur;
+	public String content;
+	public String login;
 	public Date date;
-	public String messagerie;
+	public String chat;
 	
 }

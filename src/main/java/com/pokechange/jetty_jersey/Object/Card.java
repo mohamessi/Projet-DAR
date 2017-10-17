@@ -1,8 +1,8 @@
 package com.pokechange.jetty_jersey.Object;
 
-public class Carte {
+public class Card {
 	
 	public String extension;
-	public int numero;
+	public int number;
 
 }
