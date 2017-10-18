@@ -1,4 +1,4 @@
-package com.pokechange.jetty_jersey.Interface;
+package com.pokechange.jetty_jersey.dao;
 
 import java.util.List;
 

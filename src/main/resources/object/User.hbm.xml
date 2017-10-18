@@ -1,0 +1,17 @@
+<?xmlversion="1.0"?>
+<!DOCTYPEhibernate-mappingPUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="com.javawebtutor.User"table="USER">
+        <id name="userId"type="int"column="USER_ID">
+            <generator class="assigned"/>
+        </id>
+        <property name="login" column="login" type="string" />
+		<property name="pass" column="pass" type="string" />
+		<property name="city" column="city" type="string" />
+		<property name="question" column="question" type="question" />
+		<property name="answer" column="answer" type="string" />
+    </class>
+</hibernate-mapping>
